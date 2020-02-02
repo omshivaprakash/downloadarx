@@ -5,11 +5,11 @@ setup(
     name = "downloadarx",
     packages = ["downloadarx"],
     version = "1.0.0",
-    description = "Download DLI Telugu catalog",
+    description = "Download DLI Kannada catalog",
     author = "Arjuna Rao Chavala ",
     author_email = "arjunaraoc@gmail.com",
-    url = "https://github.com/arjunaraoc/downloadarx",
-    download_url = "https://github.com/arjunaraoc/downloadarx",
+    url = "https://github.com/omshivaprakash/downloadarx",
+    download_url = "https://github.com/omshivaprakash/downloadarx",
     keywords = ["catalog", "archive.org", "DLI"],
     install_requires=[
         'requests'
