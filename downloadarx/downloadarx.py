@@ -8,7 +8,7 @@ def getCollection(resfile):
         fo=open(resfile,"w")
         error_log = open('arxerrlog.txt', 'w+')
         url = "https://archive.org/services/search/v1/scrape?"
-        basic_params={ 'q':'(collection%3Adigitallibraryindia+AND+(language%3Atel++OR+language%3ATelugu))', 'fields':'description'}
+        basic_params={ 'q':'(collection%3Adigitallibraryindia+AND+(language%3Akan++OR+language%3AKannada))', 'fields':'description'}
         params=basic_params.copy()
         while True:
             try:
@@ -44,7 +44,7 @@ def getFields(resfile,numitems):
         fo.write( "identifier"+"\t"+"title"+"\t"+"creator"+"\t"+"date"+"\n")
         error_log = open('arxerrlog.txt', 'w+')
         url = "https://archive.org/services/search/v1/scrape?"
-        basic_params = {'q': '(collection%3Adigitallibraryindia+AND+(language%3Atel++OR+language%3ATelugu))',
+        basic_params = {'q': '(collection%3Adigitallibraryindia+AND+(language%3Akan++OR+language%3AKannada))',
                         'fields': 'identifier,title,creator,date', 'output': 'json'}
         params = basic_params.copy()
         count=0
@@ -132,7 +132,7 @@ def getCollection2(resfile,numitems):
         fo=open(resfile,"w")
         error_log = open('arxerrlog.txt', 'w+')
         url = "https://archive.org/services/search/v1/scrape?"
-        basic_params={ 'q':'(collection%3Adigitallibraryindia+AND+(language%3Atel++OR+language%3ATelugu))',
+        basic_params={ 'q':'(collection%3Adigitallibraryindia+AND+(language%3Akan++OR+language%3AKannada))',
                        'fields':'identifier,title,creator,date,description'}
         params=basic_params.copy()
         numline = 0
